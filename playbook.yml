@@ -1,0 +1,7 @@
+- name: stig conf
+  hosts: all
+  become: true
+  tasks:
+  - name: Execute security.sh
+    become: true
+    shell: /home/ccs2/ansible-stigs/security.sh
